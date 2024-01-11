@@ -12,6 +12,9 @@ async function bootstrap() {
     defaultVersion: ["1", "2"]
   });
 
+  console.log("port", process.env.PORT);
+  
+
 
   app.useGlobalPipes(new ValidationPipe({
     whitelist: true
